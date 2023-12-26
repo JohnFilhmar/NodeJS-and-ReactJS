@@ -24,20 +24,31 @@ Follow the steps below to set up and run the project on your local machine.
 ```bash
 # Clone the repository
 git clone https://github.com/your-username/your-project.git
+```
 
+```bash
 # Navigate to the project directory
 cd your-project
+```
 
+```bash
 # Install concurrently from the project directory
 npm install
+```
 
+```bash
 # Install backend dependencies
 cd backend
 npm install
+```
 
+```bash
 # Install frontend dependencies
 cd frontend
 npm install
+```
 
+```bash
 # In the project root directory
 npm run start:both
+```

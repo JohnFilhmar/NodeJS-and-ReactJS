@@ -6,18 +6,15 @@
     "install:both": "concurrently \"cd frontend && npm install\" \"cd backend && npm install\"",
     "start:both": "concurrently \"cd frontend && npm start\" \"cd backend && npm start\""
   },  
-  "keywords": ["CRUD", "NodeJS", "ReactJS", "npx create-react-app my-app", "ExpressJS"],
+  "keywords": ["CRUD", "NodeJS", "ReactJS", "ExpressJS", "Javascript", "MYSQL"],
   "author": "JohnFilhmar",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^8.2.2"
   },
-  "homepage": "https://github.com/your-username/project",
+  "homepage": "https://github.com/JohnFilhmar/NodeJS-and-ReactJS.git",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/your-username/project.git"
-  },
-  "bugs": {
-    "url": "https://github.com/your-username/project/issues"
+    "url": "https://github.com/JohnFilhmar/NodeJS-and-ReactJS.git"
   }
 }
