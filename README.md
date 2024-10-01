@@ -93,4 +93,5 @@ npm install
 npm start
 ```
 
-# Done and you can now code away. Good Luck
+# Or you can just run the file run_application.bat if you already have NODEJS installed
+## Done and you can now code away. Good Luck
