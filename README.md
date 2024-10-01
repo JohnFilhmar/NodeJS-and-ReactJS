@@ -19,36 +19,78 @@ Follow the steps below to set up and run the project on your local machine.
 
 - Node.js installed on your machine.
 
+#### Launch Windows Powershell
+```bash
+# installs fnm (Fast Node Manager)
+winget install Schniz.fnm
+```
+
+#### Restart/Relaunch Windows Powershell to load newly downloaded package
+
+```bash
+# configure fnm environment
+fnm env --use-on-cd | Out-String | Invoke-Expression
+```
+
+```bash
+# download and install Node.js
+fnm use --install-if-missing 22
+```
+
+```bash
+# verifies the right Node.js version is in the environment
+node -v # should print `v<version>`
+```
+
+```bash
+# verifies the right npm version is in the environment
+npm -v # should print `<version>`
+```
+
 ### Installation
+
+#### Inside VSCODE working environment in your root project directory > ctrl + shift + (backtick/grave accent `) to open a new vscode terminal window
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/your-project.git
+git clone https://github.com/JohnFilhmar/NodeJS-and-ReactJS.git
 ```
 
 ```bash
 # Navigate to the project directory
-cd your-project
+cd NODEJS-AND-REACTJS
 ```
 
 ```bash
-# Install concurrently from the project directory
-npm install
+# Change directory to the backend environment
+cd backend
 ```
 
 ```bash
 # Install backend dependencies
+npm install
+```
+
+```bash
+# Start the backend environment with nodemon for real time file changes rendering
+npm run start
+```
+
+#### Create a new command window with ctrl + shift + (backtick/grave accent `)
+
+```bash
+# Change directory to the backend environment
 cd backend
+```
+
+```bash
+# Install backend dependencies
 npm install
 ```
 
 ```bash
-# Install frontend dependencies
-cd frontend
-npm install
+# Start the backend environment
+npm start
 ```
 
-```bash
-# In the project root directory
-npm run start:both
-```
+# Done and you can now code away. Good Luck
