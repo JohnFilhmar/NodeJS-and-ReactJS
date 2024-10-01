@@ -93,5 +93,11 @@ npm install
 npm start
 ```
 
+### After installation and starting the environment, setup your database
+
+- Inside the backend folder you'll see users.sql
+- Export that in a newly created database named "myDatabase"
+- Make sure to set database charset to 'utf8mb4'
+
 # Or you can just run the file run_application.bat if you already have NODEJS installed
 ## Done and you can now code away. Good Luck
