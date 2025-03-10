@@ -1,10 +1,10 @@
-import Home from './components/Home';
+import Main from './components';
 
 const App = () => {
 
   return (
-    <div className="bg-gray-950">
-      <Home />
+    <div>
+      <Main />
     </div>
   );
 };

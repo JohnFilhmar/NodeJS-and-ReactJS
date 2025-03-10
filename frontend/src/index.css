@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.gmab {
+  border: 3px dashed black; /* Thick broken (dashed) border */
+  border-radius: 10px; /* Rounded border */
+  padding: 8px; /* Small padding */
+  margin: 0px; /* No margin */
+}
+
+.gmab p {
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
