@@ -16,10 +16,16 @@ app.use(cors({
 app.use(express.json());
 
 const serverOptions = {
-  key: fs.readFileSync(path.join(__dirname, 'certificates', 'key.pem')),
-  cert: fs.readFileSync(path.join(__dirname, 'certificates', 'cert.pem')),
+  key: fs.readFileSync(path.join(__dirname, 'certificates', 'localhost-key.pem')),
+  cert: fs.readFileSync(path.join(__dirname, 'certificates', 'localhost.pem')),
 };
 
+app.use('/', (req, res) => {
+  return res.status(200).json({ 
+    status: 200,
+    message: "Rest API is Running..."
+  });
+});
 app.use('/api', routes);
 
 const server = https.createServer(serverOptions, app);
